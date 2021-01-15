@@ -1,0 +1,59 @@
+body 
+{
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	color: white;
+}
+
+h1 
+{
+
+}
+
+a
+{
+	color: gold;
+}
+
+user
+{
+	color: yellow;
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: bold;
+	
+}
+
+p 
+{
+	
+}
+
+.header 
+{
+	padding: 8%;
+	text-align: center;
+	background: black;
+	color: gold;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	background-image: url("../images/backgroundexample2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+footer 
+{
+	padding: 8%;
+	text-align: center;
+	background: black;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	background-image: url("../images/backgroundexample1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}

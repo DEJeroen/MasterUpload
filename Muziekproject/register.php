@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="css/style.css">
 		<title>Registratiepagina MuziekProject</title>
 	</head>
 	<body>
-		<h2>Registratiepagina MuziekProject</h2>
-		<a href="index.php">Klik hier om terug te gaan.</a><br/><br/>
-		<form action="register.php" method="post">
-			Voer een gebruikersnaam in: <br><input type="text" name="username" required="required"/> </br>
-			Voer een wachtwoord in: <br><input type="password" name="password" required="required" /> </br/>
-			<input type="submit" value="Register"/>
-		</form>
-	</body>
-</html>
+		<div class="header">
+			<h1>Registratiepagina MuziekProject</h1>
+		</div> 
+		<a href="index.php">HOME</a>
+
 
 <?php
 	require("Backend/config.php");
+	include("Backend/auth_session.php");
 	
 	//Test om te kijken of er session login is
-	foreach ($_SESSION as $key=>$val)
-		echo "Welkom ".$val."<br/>";
+	foreach ($_SESSION as $key=>$Session)
+	{	
+		echo "<br><hr>Welkom, <user><b>".$Session."</b></user><hr>";
+	}
 	
 	$conn = $db_connection; 
 	//Check connection
@@ -72,3 +72,14 @@
 
 	$conn->close();
 ?>
+
+		<form action="register.php" method="post">
+			Voer een gebruikersnaam in: <br><input type="text" name="username" required="required"/> </br>
+			Voer een wachtwoord in: <br><input type="password" name="password" required="required" /> </br/>
+			<input type="submit" value="Register"/>
+		</form><br>
+	</body>
+	<footer>
+	
+	</footer>
+</html>

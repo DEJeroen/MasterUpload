@@ -1,9 +1,9 @@
 <?php
     session_start();
-    // Destroy session
+    // Vernietig sessie
     if(session_destroy()) 
 	{
-        // Redirecting To Home Page
+        //Terugsturen naar de thuispagina
         header("Location: login.php");
     }
 ?>

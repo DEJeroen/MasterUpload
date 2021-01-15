@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Login Pagina</title>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Loginpagina MuziekProject</title>
 	</head>
-<body>
+	<body>
+		<div class="header">
+			<h1>Loginpagina MuziekProject</h1>
+		</div> 
 
 <?php
     require("Backend/config.php");
@@ -12,7 +16,10 @@
 	
 	//Test om te kijken of er session login is
 	foreach ($_SESSION as $key=>$val)
+	{
 		echo "Welkom ".$val."<br/>";
+		header("Location: index.php");
+	}
 	
     // When form submitted, check and create user session.
     if (isset($_POST['username'])) 
@@ -45,7 +52,6 @@
 	{
 ?>
     <form class="form" method="post" name="loginUser">
-        <h1 class="login-title">Login Pagina</h1>
 		<a class="login-title">Login Gebruikers en Admins</a>
         <br><input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
         <input type="password" class="login-input" name="password" placeholder="Password"/>
@@ -54,5 +60,8 @@
 <?php
     }
 ?>
-</body>
+	</body>
+	<footer>
+	
+	</footer>
 </html>

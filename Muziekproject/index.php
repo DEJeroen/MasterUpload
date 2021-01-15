@@ -1,118 +1,281 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="css/style.css">
 		<title>Indexpagina MuziekProject</title>
 	</head>
 	<body>
-		<h1>Indexpagina MuziekProject</h1>
+		<div class="header">
+			<h1>Indexpagina MuziekProject</h1>
+		</div> 
+		<a href="index.php">HOME</a>
 		
 		<?php
 			require("Backend/config.php");
 			//include("Backend/auth_session.php");
 		
 			$connection = $db_connection; 
-			//Check connection
+			//Controleer verbinding
 			if ($connection->connect_error) 
 			{
 				die("Connection failed: " . $connection->connect_error);
 			} 
 			
 			$Session = "";
+			$admin_status ="";
+			$user_ID ="";
+			$loggedAs ="";
+			$conversation_ID ="";
+			$comment_conversation_ID ="";
+			$username ="";
+			$selectedConversation ="";
+			$selectedCheck ="";
+			$selectedChat = "";
+			
 			//Test om te kijken of er session login is
 			foreach ($_SESSION as $key=>$Session)
-			{
-				echo "Welkom, <b>".$Session."</b><hr>";
+			{	
+				echo "<br><hr>Welkom, <user>".$Session."</user><hr>";
 			}
 				
-			$processed_1 ="";
-			$processed_2 ="";
-			$processed_3 ="";
-			$processed_4 ="";
-			
-			$query_part1 = "SELECT user_ID FROM user WHERE user_name='$Session'";
-			$query_result1 = $connection->query($query_part1);
-			if ($query_result1->num_rows > 0) 
+			$query_user_ID = "SELECT user_ID FROM user WHERE user_name='$Session'";
+			$query_user_ID_result = $connection->query($query_user_ID);
+			if ($query_user_ID_result->num_rows > 0) 
 			{
 				// output data of each row
-				while($row1 = $query_result1->fetch_assoc()) 
+				while($row1 = $query_user_ID_result->fetch_assoc()) 
 				{
-					$processed_1 = $row1["user_ID"];
-					//echo "<br> query_part1 -  $processed_1";
+					$user_ID = $row1["user_ID"];
+					$loggedAs = $row1["user_ID"];
 				}
-				
-				$query_part2 = "SELECT DISTINCT conversation_ID FROM comment WHERE user_ID='$processed_1'";
-				$query_result2 = $connection->query($query_part2);
-				if ($query_result2->num_rows > 0) 
+						
+				$query_admin_status = "SELECT admin FROM user WHERE user_ID='$user_ID'";
+				$query_admin_status_result = $connection->query($query_admin_status);
+				if ($query_admin_status_result->num_rows > 0) 
 				{
 					// output data of each row
-					while($row1 = $query_result2->fetch_assoc()) 
+					while($row1 = $query_admin_status_result->fetch_assoc()) 
 					{
-						$processed_2 = $row1["conversation_ID"];
-						//echo "<br> query_part2 -  $processed_2";
+						$admin_status = $row1["admin"];
 					}
 				}
-				
-				$query_part3 = "SELECT * FROM comment WHERE conversation_ID='$processed_2'";
-				$query_result3 = $connection->query($query_part3);
-				if ($query_result3->num_rows > 0) 
+////////////////////ADMIN AREA/////////////////////////ADMIN AREA///////////////////////////				
+				if ($admin_status == 1)
 				{
-					// output data of each row
-					while($row1 = $query_result3->fetch_assoc()) 
+					$query_conversation_ID = "SELECT * FROM conversation";
+					$query_conversation_ID_result = $connection->query($query_conversation_ID);
+					if ($query_conversation_ID_result->num_rows > 0) 
 					{
-						$processed_3 = $row1["conversation_ID"];
-						//echo "<br> query_part3 -  $processed_3";
-						
-						$processed_4 = $row1["user_ID"];
-						//echo "<br> query_part4 -  $processed_4";
-						
-						$query_part4 = "SELECT user_name FROM user WHERE user_ID='$processed_4'";
-						$query_result4 = $connection->query($query_part4);
-						$message_owner ="";
-										
 						// output data of each row
-						while($row2 = $query_result4->fetch_assoc()) 
+						while($row1 = $query_conversation_ID_result->fetch_assoc()) 
 						{
-							$message_owner = $row2["user_name"];;
+							$conversation_ID = $row1["conversation_ID"];
+							$user_ID = $row1["user_ID"];	
+							
+							//echo "<br>Conversation_ID - $conversation_ID  
+							//<br> User_ID - $user_ID ";
+							
+							$query_user_ID = "SELECT user_name FROM user WHERE user_ID='$user_ID'";
+							$query_user_ID_result = $connection->query($query_user_ID);
+							if ($query_user_ID_result->num_rows > 0) 
+							{
+								// output data of each row
+								while($row1 = $query_user_ID_result->fetch_assoc()) 
+								{
+									echo "<br> Gebruiker - <user>" . $row1["user_name"] . "</user>
+									<br><a href=\"index.php?gesprek=$conversation_ID\">Selecteer</a><br><br><hr>";
+								}
+							}
 						}
-						
-						echo "" . $row1["date"]. 
-						"<br><b>" . $message_owner.
-						"</b><br><br>" . $row1["comment"]. 
-						'<br><a href="'.$row1['uploaded_file'].'">'.$row1['uploaded_file'].'</a></br><hr>';
 					}
-				}	
+					
+					echo "<br><hr><a href=\"index.php?nieuw_gesprek\">Begin nieuw gesprek</a><hr>";	
+					
+					if (isset($_GET['gesprek']))
+					{
+						echo "<br><h3>Huidig, <b><user>Gesprek " . $_GET['gesprek'] . "</h3></user></b><hr>";
+					}
+				}
+////////////////////ADMIN AREA/////////////////////////ADMIN AREA///////////////////////////				
+				
+////////////////////USER AREA/////////////////////////USER AREA///////////////////////////				
+				else if ($admin_status == 0)
+				{
+					$query_conversation_ID = "SELECT conversation_ID FROM conversation WHERE user_ID='$user_ID'";
+					$query_conversation_ID_result = $connection->query($query_conversation_ID);
+					if ($query_conversation_ID_result->num_rows > 0) 
+					{
+						// output data of each row
+						while($row1 = $query_conversation_ID_result->fetch_assoc()) 
+						{
+							$conversation_ID = $row1["conversation_ID"];
+							chooseConversation($conversation_ID);
+						}
+					}
+					else
+					{
+						//echo "<br>Gesprek ID - $conversation_ID ";
+						echo "<br>Nog geen gesprek gestart <br><br><hr>";
+					}					
+				}
+////////////////////USER AREA/////////////////////////USER AREA///////////////////////////								
+			}
+			
+			//Bepaald welk gesprek wordt getoont
+			function chooseConversation($selectedConversation) 
+			{
+				global $selectedChat;
+				global $conversation_ID;
+				global $selectedCheck;
+				$selectedChat = $selectedConversation;
+				$conversation_ID = $selectedConversation;
+				$selectedCheck = TRUE;
+				
+				selectedConversation();				
+			}
+			
+			//Functie getter wanneer een gesprek gekozen is
+			if (isset($_GET['gesprek']) && $admin_status == 1)
+			{
+				chooseConversation($_GET['gesprek']);
+			}
+			
+			//Functie getter wanneer een nieuw gesprek gekozen is
+			if (isset($_GET['nieuw_gesprek']) && $admin_status == 1)
+			{
+				echo "<br><hr><b><h3>Kies een gebruiker om een nieuw gesprek mee te starten.</h3></b><hr>";
+				
+				$userCheck ="";
+				$userArray = array();
+				$i = 0;
+				
+				$query_conversation_user_ID = "SELECT user_ID FROM conversation";
+				$query_conversation_user_ID_result = $connection->query($query_conversation_user_ID);
+				if ($query_conversation_user_ID_result->num_rows > 0) 
+				{
+					// output data of each row
+					while($row1 = $query_conversation_user_ID_result->fetch_assoc()) 
+					{
+						$i++;				
+						$userCheck = $row1["user_ID"];	
+						$userArray[$i] = $userCheck;
+					}
+				}
+				$userArray = implode ( ', ', $userArray);
+				$query_user_ID = "SELECT * FROM user WHERE user_ID NOT IN ($userArray)";
+				$query_user_ID_result = $connection->query($query_user_ID);
+				if ($query_user_ID_result->num_rows > 0) 
+				{
+					// output data of each row
+					while($row1 = $query_user_ID_result->fetch_assoc()) 
+					{
+						$user_ID = $row1["user_ID"];
+						$username = $row1["user_name"];
+						$admin_status = $row1["admin"];
+								
+						if ($admin_status == 1)
+						{
+							$admin_status = "Admin";
+						}
+						else
+						{
+							$admin_status = "Gebruiker";
+						}
+									
+						echo "<a href=\"index.php?conversation_user=$user_ID\">Selecteer</a><br>";	
+									
+						echo "Gebruiker - $user_ID <br>
+						Naam - <user> $username </user><br>
+						Rechten - $admin_status <br><hr>";
+					}
+				}				
+			}
+
+			//Functie getter wanneer een gebruiker voor een nieuw gesprek gekozen is
+			if (isset($_GET['conversation_user']) && $admin_status == 1)
+			{
+				$user_ID = $_GET['conversation_user'];
+				
+				$query_conversation_user_ID = "SELECT user_ID FROM conversation WHERE user_ID='$user_ID'";
+				$query_conversation_user_ID_result = $connection->query($query_conversation_user_ID);
+				$sql="SELECT user_name FROM user WHERE user_name='$username'";
+				$result = $conn->query($sql);
+				
+				if ($result->num_rows > 0)
+				{
+					echo"<br><b> Deze naam bestaat al, probeer een andere naam in te voeren.</b></br>";
+				}
+				
+				$query_new_conversation    = "INSERT into `conversation` (user_ID)
+				VALUES ('$user_ID')";
+				$query_new_conversation_result   = mysqli_query($connection, $query_new_conversation);
+				if ($query_new_conversation_result) 
+				{
+					echo "<div class='form'>
+					<h3>Het gesprek is succesvol aangemaakt.</h3><br/>
+					</div>";
+				} 
 				else 
 				{
-					echo "0 resultaten";
+					echo "<div class='form'>
+					<h3>Er is iets fout gegaan, probeer het opnieuw.</h3><br/>
+					</div>";
 				}
-				//$connection->close();				
+				$connection->close();	
+				header("Location: index.php");
+				exit();				
 			}
 		
-//////////////////////DANGER ZONE////////////////////////DANGER ZONE//////////////////////////////
-			
-			//require("Backend/config.php");
-			//include("Backend/auth_session.php");
-		
-			//$connection = $db_connection; 
-			//Check connection
-			//if ($connection->connect_error) 
-			//{
-			//	die("Connection failed: " . $connection->connect_error);
-			//} 
-			if (isset($_REQUEST['comment'])) 
+			function selectedConversation()
+			{	
+				global $connection;
+				global $selectedCheck;
+				global $conversation_ID;
+				//global $selectedChat;
+				
+				if ($selectedCheck === TRUE)
+				{
+					$query_comment_conversation_ID = "SELECT * FROM comment WHERE conversation_ID='$conversation_ID'";
+					$query_comment_conversation_ID_result = $connection->query($query_comment_conversation_ID);
+					if ($query_comment_conversation_ID_result->num_rows > 0) 
+					{
+						// output data of each row
+						while($row1 = $query_comment_conversation_ID_result->fetch_assoc()) 
+						{
+							$comment_conversation_ID = $row1["conversation_ID"];
+							$username = $row1["user_ID"];			
+							$query_username = "SELECT user_name FROM user WHERE user_ID='$username'";
+							$query_username_result = $connection->query($query_username);
+							$message_owner ="";
+												
+							// output data of each row
+							while($row2 = $query_username_result->fetch_assoc()) 
+							{
+								$message_owner = $row2["user_name"];
+							}	
+														
+							echo "" . $row1["date"]. 
+							"<br><br><user>" . $message_owner.
+							"</user>: - <b>" . $row1["comment"]. 
+							'</b><br><br><a href="'.$row1['uploaded_file'].'">'.$row1['uploaded_file'].'</a></br><hr>';
+						}
+					}	
+					else 
+					{
+						echo "0 resultaten";
+					}
+					//$connection->close();							
+				}
+				else
+				{
+					//echo "<BR>FALSE<BR>ID - " . $conversation_ID . "<BR>CHECK - " . $selectedCheck . "<BR>";
+					//echo "<script>alert('FALSE');</script>"; 
+				}
+			}
+							
+			if (isset($_REQUEST['comment']) && $_SESSION != null) 
 			{
-				// removes backslashes
-				//$comment = stripslashes($_REQUEST['comment']);
-				//escapes special characters in a string
-				//$comment = mysqli_real_escape_string($connection, $comment);
-				
 				$comment = ($_REQUEST['comment']);
-				$user_ID = $processed_1;
-				$conversation_ID = $processed_2;
-				
-				//echo"$comment <br>";
-				//echo"$user_ID <br>";
-				//echo"$conversation_ID <br>";
 				
 				if (empty($comment))
 				{
@@ -121,7 +284,7 @@
 				else 
 				{
 					$comment_query    = "INSERT into `comment` (comment, user_ID, conversation_ID)
-					VALUES ('$comment', '$user_ID', '$conversation_ID')";
+					VALUES ('$comment', '$loggedAs', '$selectedChat')";
 					$comment_result   = mysqli_query($connection, $comment_query);
 					if ($comment_result) 
 					{
@@ -137,41 +300,45 @@
 					}
 				}
 				
+				echo "<BR>Comment - " . $comment . "<BR>loggedAs - " . $loggedAs . "<BR>selectedChat - " . $selectedChat . "<BR>Conversation_ID - " . $conversation_ID . "<BR>";
+
 				$connection->close();	
-				header("Location: index.php");
+				header("Location: ");
 				exit();
 			}		
-			else 
-			{
-		
-			}
-			
-//////////////////////DANGER ZONE////////////////////////DANGER ZONE//////////////////////////////
 		?>
 		
-		<?php if ($_SESSION != null) : ?>
+		<!--Wanneer ingelogd en geplaatst in een gesprek-->
+		<?php if ($_SESSION != null && $conversation_ID != null && $selectedChat != null) : ?>
 		
 			<html>
-				<form action="index.php" method="post">
+				<form action="" method="post">
 					<br><input type="text" name="comment" required="required"/>
 					<input type="submit" value="Bericht Versturen"/>
 					<input type="button" value="Bestand Uploaden"/>
 				</form>
-				
-				<br><a href="logout.php"> Klik hier om uit te loggen. </a>
-				
-			</html>
-			
 		<?php endif; ?>
 		
-		<?php if ($_SESSION == null) : ?>
+		<!--Wanneer ingelogd en admin-->
+		<?php if ($_SESSION != null && $admin_status == 1) : ?>		
+				<br><a href="register.php"> Klik hier voor te registeren. </a>
+			</html>		
+		<?php endif; ?>
 		
+		<!--Wanneer ingelogd-->
+		<?php if ($_SESSION != null) : ?>		
+				<br><a href="logout.php"> Klik hier om uit te loggen. </a></br>
+			</html><br>
+		<?php endif; ?>
+		
+		<!--Wanneer niet ingelogd-->
+		<?php if ($_SESSION == null) : ?>
 			<html>
 				<br><a href="login.php"> Klik hier voor inloggen. </a>
-				<br><a href="register.php"> Klik hier voor te registeren. </a>
-			</html>
-			
+			</html>	
 		<?php endif; ?>
 		
 	</body>
+	<footer>
+	</footer>
 </html>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2021 at 05:47 PM
+-- Generation Time: Jan 14, 2021 at 11:32 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -47,7 +47,29 @@ INSERT INTO `comment` (`comment_ID`, `conversation_ID`, `comment`, `date`, `user
 (4, 2, 'Dit is een tweede gesprek reactie', '2021-01-07 02:18:26', 20, 'testbestand.zip'),
 (5, 1, 'Dank je voor de remix klinkt goed.', '2021-01-07 00:38:33', 1, ''),
 (6, 1, 'Geen probleem ben blij om dat te horen!', '2021-01-07 00:42:06', 18, ''),
-(14, 1, 'Hoop snel weer samen te werken.', '2021-01-07 03:21:50', 1, '');
+(14, 1, 'Hoop snel weer samen te werken.', '2021-01-07 03:21:50', 1, ''),
+(17, 1, 'Even testen', '2021-01-09 00:59:30', 1, ''),
+(20, 1, 'Volgende test', '2021-01-11 02:15:23', 1, ''),
+(120, 2, 'Reactie alweer', '2021-01-11 20:52:26', 2, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `conversation`
+--
+
+CREATE TABLE `conversation` (
+  `conversation_ID` int(11) NOT NULL,
+  `user_ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `conversation`
+--
+
+INSERT INTO `conversation` (`conversation_ID`, `user_ID`) VALUES
+(1, 1),
+(2, 2);
 
 -- --------------------------------------------------------
 
@@ -82,6 +104,14 @@ INSERT INTO `user` (`user_ID`, `user_name`, `user_password`, `admin`) VALUES
 --
 ALTER TABLE `comment`
   ADD PRIMARY KEY (`comment_ID`),
+  ADD KEY `user_ID` (`user_ID`),
+  ADD KEY `conversation_ID` (`conversation_ID`);
+
+--
+-- Indexes for table `conversation`
+--
+ALTER TABLE `conversation`
+  ADD PRIMARY KEY (`conversation_ID`),
   ADD KEY `user_ID` (`user_ID`);
 
 --
@@ -99,7 +129,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `comment_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `comment_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=143;
+
+--
+-- AUTO_INCREMENT for table `conversation`
+--
+ALTER TABLE `conversation`
+  MODIFY `conversation_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `user`
@@ -115,7 +151,14 @@ ALTER TABLE `user`
 -- Constraints for table `comment`
 --
 ALTER TABLE `comment`
-  ADD CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`user_ID`) REFERENCES `user` (`user_ID`);
+  ADD CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`user_ID`) REFERENCES `user` (`user_ID`),
+  ADD CONSTRAINT `comment_ibfk_3` FOREIGN KEY (`conversation_ID`) REFERENCES `conversation` (`conversation_ID`);
+
+--
+-- Constraints for table `conversation`
+--
+ALTER TABLE `conversation`
+  ADD CONSTRAINT `conversation_ibfk_1` FOREIGN KEY (`user_ID`) REFERENCES `user` (`user_ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
