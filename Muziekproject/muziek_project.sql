@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2021 at 11:32 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 7.4.13
+-- Gegenereerd op: 23 jan 2021 om 23:42
+-- Serverversie: 10.4.17-MariaDB
+-- PHP-versie: 7.4.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `comment`
+-- Tabelstructuur voor tabel `comment`
 --
 
 CREATE TABLE `comment` (
@@ -37,25 +37,24 @@ CREATE TABLE `comment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `comment`
+-- Gegevens worden geëxporteerd voor tabel `comment`
 --
 
 INSERT INTO `comment` (`comment_ID`, `conversation_ID`, `comment`, `date`, `user_ID`, `uploaded_file`) VALUES
-(1, 1, 'Dit is het begin en een test.', '2021-01-06 23:46:21', 1, 'muziek.zip'),
-(2, 1, 'Dit is een reactie', '2021-01-06 23:46:29', 18, 'bewerktmuziek.zip'),
+(1, 1, 'Dit is het begin en een test.', '2021-01-23 02:20:12', 1, 'Dire Straits - Sultans Of Swing.mp3'),
+(2, 1, 'Dit is een reactie', '2021-01-23 02:11:02', 18, ''),
 (3, 2, 'Dit is een tweede gesprek.', '2021-01-06 23:46:41', 2, ''),
-(4, 2, 'Dit is een tweede gesprek reactie', '2021-01-07 02:18:26', 20, 'testbestand.zip'),
 (5, 1, 'Dank je voor de remix klinkt goed.', '2021-01-07 00:38:33', 1, ''),
 (6, 1, 'Geen probleem ben blij om dat te horen!', '2021-01-07 00:42:06', 18, ''),
 (14, 1, 'Hoop snel weer samen te werken.', '2021-01-07 03:21:50', 1, ''),
-(17, 1, 'Even testen', '2021-01-09 00:59:30', 1, ''),
-(20, 1, 'Volgende test', '2021-01-11 02:15:23', 1, ''),
-(120, 2, 'Reactie alweer', '2021-01-11 20:52:26', 2, '');
+(120, 2, 'Reactie alweer', '2021-01-21 01:39:05', 2, 'Nik Kershaw - The Riddle Lyrics.mp3'),
+(164, 1, 'Nieuwe test', '2021-01-23 02:54:20', 1, 'stuck_at_home.mp3'),
+(187, 2, 'Test', '2021-01-23 22:27:28', 18, 'The Sound of Silence Original Version from 1964.mp3');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `conversation`
+-- Tabelstructuur voor tabel `conversation`
 --
 
 CREATE TABLE `conversation` (
@@ -64,7 +63,7 @@ CREATE TABLE `conversation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `conversation`
+-- Gegevens worden geëxporteerd voor tabel `conversation`
 --
 
 INSERT INTO `conversation` (`conversation_ID`, `user_ID`) VALUES
@@ -74,7 +73,7 @@ INSERT INTO `conversation` (`conversation_ID`, `user_ID`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Tabelstructuur voor tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -85,7 +84,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
+-- Gegevens worden geëxporteerd voor tabel `user`
 --
 
 INSERT INTO `user` (`user_ID`, `user_name`, `user_password`, `admin`) VALUES
@@ -96,11 +95,11 @@ INSERT INTO `user` (`user_ID`, `user_name`, `user_password`, `admin`) VALUES
 (20, 'rob', 'rob', 1);
 
 --
--- Indexes for dumped tables
+-- Indexen voor geëxporteerde tabellen
 --
 
 --
--- Indexes for table `comment`
+-- Indexen voor tabel `comment`
 --
 ALTER TABLE `comment`
   ADD PRIMARY KEY (`comment_ID`),
@@ -108,54 +107,54 @@ ALTER TABLE `comment`
   ADD KEY `conversation_ID` (`conversation_ID`);
 
 --
--- Indexes for table `conversation`
+-- Indexen voor tabel `conversation`
 --
 ALTER TABLE `conversation`
   ADD PRIMARY KEY (`conversation_ID`),
   ADD KEY `user_ID` (`user_ID`);
 
 --
--- Indexes for table `user`
+-- Indexen voor tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_ID`),
   ADD KEY `user_name` (`user_name`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
 --
--- AUTO_INCREMENT for table `comment`
+-- AUTO_INCREMENT voor een tabel `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `comment_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=143;
+  MODIFY `comment_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
 
 --
--- AUTO_INCREMENT for table `conversation`
+-- AUTO_INCREMENT voor een tabel `conversation`
 --
 ALTER TABLE `conversation`
-  MODIFY `conversation_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `conversation_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT voor een tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `user_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
--- Constraints for dumped tables
+-- Beperkingen voor geëxporteerde tabellen
 --
 
 --
--- Constraints for table `comment`
+-- Beperkingen voor tabel `comment`
 --
 ALTER TABLE `comment`
   ADD CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`user_ID`) REFERENCES `user` (`user_ID`),
   ADD CONSTRAINT `comment_ibfk_3` FOREIGN KEY (`conversation_ID`) REFERENCES `conversation` (`conversation_ID`);
 
 --
--- Constraints for table `conversation`
+-- Beperkingen voor tabel `conversation`
 --
 ALTER TABLE `conversation`
   ADD CONSTRAINT `conversation_ibfk_1` FOREIGN KEY (`user_ID`) REFERENCES `user` (`user_ID`);

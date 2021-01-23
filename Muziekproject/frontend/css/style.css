@@ -1,0 +1,174 @@
+body 
+{
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	color: white;
+	height:100%
+}
+
+a
+{
+	color: #e6c300;
+}
+
+table, td, th 
+{
+	border: 1px none gold;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 8px;
+	margin-bottom: 2px;
+}
+
+table 
+{
+	border-collapse: collapse;
+	width: 90%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+td 
+{
+	text-align: center;
+}
+
+.negative
+{
+	color: red;
+}
+
+.text-title
+{
+	font-size: 22px;
+}
+
+.input 
+{
+	background-color: #cccccc;
+	border: none;
+	color: black;
+	padding: 8px 16px;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+}
+
+.textbox
+{
+	width: auto; 
+	text-align: center; 
+	border: solid #333333; 
+	background: #1a1a1a; 
+	color: black;	
+}
+
+.textbox_bottom
+{
+	border: solid #333333;
+	background: #1a1a1a; 
+}
+
+.textbox_bottom_error
+{
+	border: solid red;
+	background: #1a1a1a; 
+	font-size: 32px;
+	color: red;
+}
+
+.textbox_bottom_positive
+{
+	border: solid green;
+	background: #1a1a1a; 
+	font-size: 32px;
+	color: green;
+}
+
+.button 
+{
+	background-color: #e6c300;
+	border: none;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding: 8px 16px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 12px;
+}
+
+.user
+{
+	color: gold;
+	text-decoration: underline;
+	font-style: none;
+	font-weight: bold;
+}
+
+.user_text
+{
+	background-color: #ffe866;
+	border: none;
+	color: black;
+	padding: 8px 33px;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 4px;
+}
+
+.user_gesprek
+{
+	width: auto; 
+	text-align: center; 
+	border: solid #333333; 
+	background: #cccccc; 
+	color: black;	
+}
+
+.newuser_gesprek
+{
+	width: auto; 
+	text-align: center; 
+	border: solid #333333; 
+	background: #cccccc; 
+	color: black;	
+}
+
+.header 
+{
+	padding: 5%;
+	text-align: center;
+	background: black;
+	color: #e6c300;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	background-image: url("../images/backgroundexample2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	width:90%;
+	top: 0px;
+}
+
+/*
+footer 
+{
+	padding: 5%;
+	text-align: center;
+	background: black;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	background-image: url("../images/backgroundexample1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: fixed;
+	width:90%;
+	bottom: 0px;
+}
+*/

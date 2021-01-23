@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	$db_Host = 'localhost';
 	$db_Name = 'muziek_project';
 	$db_Username = 'root';
