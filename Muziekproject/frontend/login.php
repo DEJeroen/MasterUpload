@@ -15,8 +15,8 @@
 			</tr>
 		</table>	
 <?php
-	require("../Backend/config.php");
-	include("../Backend/auth_session.php");
+	require("../backend/config.php");
+	include("../backend/auth_session.php");
 
 	$connection = $db_connection; 
 			

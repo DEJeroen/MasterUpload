@@ -13,8 +13,8 @@
 			<tr class="textbox_bottom">		
 				<th><a class="button" href="../index.php">Home</a></th>
 		<?php
-			require("../Backend/config.php");
-			include("../Backend/auth_session.php");
+			require("../backend/config.php");
+			include("../backend/auth_session.php");
 		
 			$connection = $db_connection; 
 			

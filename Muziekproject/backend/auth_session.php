@@ -3,7 +3,7 @@
 	$uri = $_SERVER['REQUEST_URI'];
     session_start();
 	
-	if($uri != "/muziekproject/frontend/login.php" && $uri != "/muziekproject/index.php" && $uri != "/muziekproject/")
+	if($uri != "/Muziekproject/frontend/login.php" && $uri != "/Muziekproject/index.php" && $uri != "/Muziekproject/")
 	{
 		//Wanneer er nog niet is ingelogd gestuurd naar de inlogpagina.
 		if(!isset($_SESSION["username"])) 

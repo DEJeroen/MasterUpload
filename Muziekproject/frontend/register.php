@@ -14,8 +14,8 @@
 				<th><a class="button" href="../index.php">Home</a></th>
 
 <?php
-	require("../Backend/config.php");
-	include("../Backend/auth_session.php");
+	require("../backend/config.php");
+	include("../backend/auth_session.php");
 	
 	//Test om te kijken of er session login is
 	if ($_SESSION != null)
