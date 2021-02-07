@@ -1,0 +1,916 @@
+2021-02-07 17:39:31 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-02-07 17:39:31 0 [Note] InnoDB: Uses event mutexes
+2021-02-07 17:39:31 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-07 17:39:31 0 [Note] InnoDB: Number of pools: 1
+2021-02-07 17:39:31 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2021-02-07 17:39:31 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2021-02-07 17:39:31 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-07 17:39:31 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-02-07 17:39:31 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1764963
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/gtid_slave_pos.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/innodb_index_stats.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`innodb_index_stats``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`innodb_index_stats` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/innodb_table_stats.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`innodb_table_stats``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`innodb_table_stats` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__bookmark.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__bookmark``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__bookmark` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__central_columns.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__central_columns``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__central_columns` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__column_info.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__column_info``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__column_info` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__designer_settings.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__designer_settings``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__designer_settings` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__export_templates.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__export_templates``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__export_templates` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__favorite.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__favorite``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__favorite` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__history.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__history``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__history` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__navigationhiding.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__navigationhiding``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__navigationhiding` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__pdf_pages.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__pdf_pages``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__pdf_pages` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__recent.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__recent``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__recent` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__relation.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__relation``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__relation` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__savedsearches.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__savedsearches``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__savedsearches` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_coords.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_coords``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_coords` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_info.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_info``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_info` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_uiprefs.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_uiprefs``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_uiprefs` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__tracking.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__tracking``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__tracking` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__userconfig.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__userconfig``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__userconfig` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__usergroups.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__usergroups``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__usergroups` because it could not be opened.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__users.ibd' OS error: 81
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__users``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__users` because it could not be opened.
+2021-02-07 17:39:31 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2021-02-07 17:39:31 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-02-07 17:39:31 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-02-07 17:39:31 0 [Note] InnoDB: Setting file '/opt/lampp/var/mysql/ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-02-07 17:39:31 0 [Note] InnoDB: File '/opt/lampp/var/mysql/ibtmp1' size is now 12 MB.
+2021-02-07 17:39:31 0 [Note] InnoDB: Waiting for purge to start
+2021-02-07 17:39:31 2 [ERROR] InnoDB: Failed to find tablespace for table `phpmyadmin`.`pma__userconfig` in the cache. Attempting to load the tablespace with space id 15
+2021-02-07 17:39:31 2 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 2 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 2 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__userconfig.ibd' OS error: 81
+2021-02-07 17:39:31 2 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:39:31 2 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:39:31 2 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__userconfig``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:39:31 0 [Note] InnoDB: 10.4.17 started; log sequence number 1764972; transaction id 2393
+2021-02-07 17:39:31 0 [Note] InnoDB: Loading buffer pool(s) from /opt/lampp/var/mysql/ib_buffer_pool
+2021-02-07 17:39:31 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-02-07 17:39:31 0 [Note] InnoDB: Buffer pool(s) load completed at 210207 17:39:31
+2021-02-07 17:39:31 0 [ERROR] Could not open mysql.plugin table. Some plugins may be not loaded
+2021-02-07 17:39:31 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2021-02-07 17:39:31 0 [Note] Server socket created on IP: '::'.
+2021-02-07 17:39:31 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+2021-02-07 17:39:31 0 [ERROR] Aborting
+2021-02-07 17:40:19 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-02-07 17:40:19 0 [Note] InnoDB: Uses event mutexes
+2021-02-07 17:40:19 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-07 17:40:19 0 [Note] InnoDB: Number of pools: 1
+2021-02-07 17:40:19 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2021-02-07 17:40:19 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2021-02-07 17:40:19 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-07 17:40:19 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/gtid_slave_pos.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/innodb_index_stats.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`innodb_index_stats``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`innodb_index_stats` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/innodb_table_stats.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`innodb_table_stats``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`innodb_table_stats` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__bookmark.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__bookmark``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__bookmark` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__central_columns.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__central_columns``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__central_columns` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__column_info.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__column_info``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__column_info` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__designer_settings.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__designer_settings``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__designer_settings` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__export_templates.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__export_templates``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__export_templates` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__favorite.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__favorite``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__favorite` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__history.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__history``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__history` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__navigationhiding.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__navigationhiding``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__navigationhiding` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__pdf_pages.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__pdf_pages``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__pdf_pages` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__recent.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__recent``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__recent` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__relation.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__relation``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__relation` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__savedsearches.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__savedsearches``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__savedsearches` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_coords.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_coords``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_coords` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_info.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_info``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_info` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_uiprefs.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_uiprefs``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_uiprefs` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__tracking.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__tracking``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__tracking` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__userconfig.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__userconfig``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__userconfig` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__usergroups.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__usergroups``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__usergroups` because it could not be opened.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__users.ibd' OS error: 81
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__users``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__users` because it could not be opened.
+2021-02-07 17:40:20 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2021-02-07 17:40:20 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-02-07 17:40:20 0 [Note] InnoDB: Setting file '/opt/lampp/var/mysql/ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-02-07 17:40:20 0 [Note] InnoDB: File '/opt/lampp/var/mysql/ibtmp1' size is now 12 MB.
+2021-02-07 17:40:20 0 [Note] InnoDB: 10.4.17 started; log sequence number 1764981; transaction id 2393
+2021-02-07 17:40:20 2 [ERROR] InnoDB: Failed to find tablespace for table `phpmyadmin`.`pma__userconfig` in the cache. Attempting to load the tablespace with space id 15
+2021-02-07 17:40:20 2 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 0 [Note] InnoDB: Loading buffer pool(s) from /opt/lampp/var/mysql/ib_buffer_pool
+2021-02-07 17:40:20 2 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 2 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__userconfig.ibd' OS error: 81
+2021-02-07 17:40:20 2 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:40:20 2 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:40:20 2 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__userconfig``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:40:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-02-07 17:40:20 0 [ERROR] Could not open mysql.plugin table. Some plugins may be not loaded
+2021-02-07 17:40:20 0 [Note] InnoDB: Buffer pool(s) load completed at 210207 17:40:20
+2021-02-07 17:40:20 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2021-02-07 17:40:20 0 [Note] Server socket created on IP: '::'.
+2021-02-07 17:40:20 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+2021-02-07 17:40:20 0 [ERROR] Aborting
+2021-02-07 17:41:27 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-02-07 17:41:27 0 [Note] InnoDB: Uses event mutexes
+2021-02-07 17:41:27 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-07 17:41:27 0 [Note] InnoDB: Number of pools: 1
+2021-02-07 17:41:27 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2021-02-07 17:41:27 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2021-02-07 17:41:27 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-07 17:41:27 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/gtid_slave_pos.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/innodb_index_stats.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`innodb_index_stats``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`innodb_index_stats` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/innodb_table_stats.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`innodb_table_stats``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`innodb_table_stats` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__bookmark.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__bookmark``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__bookmark` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__central_columns.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__central_columns``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__central_columns` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__column_info.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__column_info``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__column_info` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__designer_settings.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__designer_settings``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__designer_settings` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__export_templates.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__export_templates``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__export_templates` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__favorite.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__favorite``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__favorite` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__history.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__history``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__history` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__navigationhiding.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__navigationhiding``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__navigationhiding` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__pdf_pages.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__pdf_pages``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__pdf_pages` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__recent.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__recent``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__recent` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__relation.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__relation``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__relation` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__savedsearches.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__savedsearches``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__savedsearches` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_coords.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_coords``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_coords` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_info.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_info``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_info` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_uiprefs.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_uiprefs``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_uiprefs` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__tracking.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__tracking``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__tracking` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__userconfig.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__userconfig``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__userconfig` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__usergroups.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__usergroups``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__usergroups` because it could not be opened.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__users.ibd' OS error: 81
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__users``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__users` because it could not be opened.
+2021-02-07 17:41:27 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2021-02-07 17:41:27 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-02-07 17:41:27 0 [Note] InnoDB: Setting file '/opt/lampp/var/mysql/ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-02-07 17:41:27 0 [Note] InnoDB: File '/opt/lampp/var/mysql/ibtmp1' size is now 12 MB.
+2021-02-07 17:41:27 0 [Note] InnoDB: Waiting for purge to start
+2021-02-07 17:41:27 3 [ERROR] InnoDB: Failed to find tablespace for table `phpmyadmin`.`pma__userconfig` in the cache. Attempting to load the tablespace with space id 15
+2021-02-07 17:41:27 3 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 3 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 3 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__userconfig.ibd' OS error: 81
+2021-02-07 17:41:27 3 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:27 3 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:27 3 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__userconfig``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:27 0 [Note] InnoDB: 10.4.17 started; log sequence number 1764990; transaction id 2393
+2021-02-07 17:41:27 0 [Note] InnoDB: Loading buffer pool(s) from /opt/lampp/var/mysql/ib_buffer_pool
+2021-02-07 17:41:27 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-02-07 17:41:27 0 [Note] InnoDB: Buffer pool(s) load completed at 210207 17:41:27
+2021-02-07 17:41:27 0 [ERROR] Could not open mysql.plugin table. Some plugins may be not loaded
+2021-02-07 17:41:27 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2021-02-07 17:41:27 0 [Note] Server socket created on IP: '::'.
+2021-02-07 17:41:27 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+2021-02-07 17:41:27 0 [ERROR] Aborting
+2021-02-07 17:41:54 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-02-07 17:41:54 0 [Note] InnoDB: Uses event mutexes
+2021-02-07 17:41:54 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-07 17:41:54 0 [Note] InnoDB: Number of pools: 1
+2021-02-07 17:41:54 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2021-02-07 17:41:54 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2021-02-07 17:41:54 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-07 17:41:54 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/gtid_slave_pos.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/innodb_index_stats.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`innodb_index_stats``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`innodb_index_stats` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/innodb_table_stats.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`innodb_table_stats``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`innodb_table_stats` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__bookmark.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__bookmark``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__bookmark` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__central_columns.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__central_columns``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__central_columns` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__column_info.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__column_info``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__column_info` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__designer_settings.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__designer_settings``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__designer_settings` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__export_templates.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__export_templates``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__export_templates` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__favorite.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__favorite``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__favorite` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__history.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__history``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__history` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__navigationhiding.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__navigationhiding``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__navigationhiding` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__pdf_pages.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__pdf_pages``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__pdf_pages` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__recent.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__recent``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__recent` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__relation.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__relation``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__relation` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__savedsearches.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__savedsearches``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__savedsearches` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_coords.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_coords``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_coords` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_info.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_info``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_info` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_uiprefs.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_uiprefs``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_uiprefs` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__tracking.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__tracking``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__tracking` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__userconfig.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__userconfig``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__userconfig` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__usergroups.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__usergroups``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__usergroups` because it could not be opened.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__users.ibd' OS error: 81
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__users``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__users` because it could not be opened.
+2021-02-07 17:41:54 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2021-02-07 17:41:54 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-02-07 17:41:54 0 [Note] InnoDB: Setting file '/opt/lampp/var/mysql/ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-02-07 17:41:54 0 [Note] InnoDB: File '/opt/lampp/var/mysql/ibtmp1' size is now 12 MB.
+2021-02-07 17:41:54 0 [Note] InnoDB: Waiting for purge to start
+2021-02-07 17:41:54 3 [ERROR] InnoDB: Failed to find tablespace for table `phpmyadmin`.`pma__userconfig` in the cache. Attempting to load the tablespace with space id 15
+2021-02-07 17:41:54 3 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 3 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 3 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__userconfig.ibd' OS error: 81
+2021-02-07 17:41:54 3 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:41:54 3 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:41:54 3 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__userconfig``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:41:54 0 [Note] InnoDB: 10.4.17 started; log sequence number 1764999; transaction id 2393
+2021-02-07 17:41:54 0 [Note] InnoDB: Loading buffer pool(s) from /opt/lampp/var/mysql/ib_buffer_pool
+2021-02-07 17:41:54 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-02-07 17:41:54 0 [ERROR] Could not open mysql.plugin table. Some plugins may be not loaded
+2021-02-07 17:41:54 0 [Note] InnoDB: Buffer pool(s) load completed at 210207 17:41:54
+2021-02-07 17:41:54 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2021-02-07 17:41:54 0 [Note] Server socket created on IP: '::'.
+2021-02-07 17:41:54 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+2021-02-07 17:41:54 0 [ERROR] Aborting
+2021-02-07 17:43:00 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-02-07 17:43:00 0 [Note] InnoDB: Uses event mutexes
+2021-02-07 17:43:00 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-07 17:43:00 0 [Note] InnoDB: Number of pools: 1
+2021-02-07 17:43:00 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2021-02-07 17:43:00 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2021-02-07 17:43:00 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-07 17:43:00 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/gtid_slave_pos.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/innodb_index_stats.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`innodb_index_stats``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`innodb_index_stats` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './mysql/innodb_table_stats.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`innodb_table_stats``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`innodb_table_stats` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__bookmark.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__bookmark``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__bookmark` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__central_columns.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__central_columns``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__central_columns` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__column_info.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__column_info``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__column_info` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__designer_settings.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__designer_settings``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__designer_settings` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__export_templates.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__export_templates``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__export_templates` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__favorite.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__favorite``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__favorite` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__history.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__history``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__history` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__navigationhiding.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__navigationhiding``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__navigationhiding` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__pdf_pages.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__pdf_pages``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__pdf_pages` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__recent.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__recent``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__recent` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__relation.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__relation``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__relation` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__savedsearches.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__savedsearches``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__savedsearches` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_coords.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_coords``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_coords` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_info.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_info``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_info` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__table_uiprefs.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__table_uiprefs``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__table_uiprefs` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__tracking.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__tracking``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__tracking` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__userconfig.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__userconfig``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__userconfig` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__usergroups.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__usergroups``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__usergroups` because it could not be opened.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__users.ibd' OS error: 81
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__users``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Warning] InnoDB: Ignoring tablespace for `phpmyadmin`.`pma__users` because it could not be opened.
+2021-02-07 17:43:00 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2021-02-07 17:43:00 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-02-07 17:43:00 0 [Note] InnoDB: Setting file '/opt/lampp/var/mysql/ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-02-07 17:43:00 0 [Note] InnoDB: File '/opt/lampp/var/mysql/ibtmp1' size is now 12 MB.
+2021-02-07 17:43:00 0 [Note] InnoDB: Waiting for purge to start
+2021-02-07 17:43:00 3 [ERROR] InnoDB: Failed to find tablespace for table `phpmyadmin`.`pma__userconfig` in the cache. Attempting to load the tablespace with space id 15
+2021-02-07 17:43:00 3 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 3 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 3 [ERROR] InnoDB: Cannot open datafile for read-only: './phpmyadmin/pma__userconfig.ibd' OS error: 81
+2021-02-07 17:43:00 3 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2021-02-07 17:43:00 3 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2021-02-07 17:43:00 3 [ERROR] InnoDB: Could not find a valid tablespace file for ``phpmyadmin`.`pma__userconfig``. Please refer to https://mariadb.com/kb/en/innodb-data-dictionary-troubleshooting/ for how to resolve the issue.
+2021-02-07 17:43:00 0 [Note] InnoDB: 10.4.17 started; log sequence number 1765008; transaction id 2393
+2021-02-07 17:43:00 0 [Note] InnoDB: Loading buffer pool(s) from /opt/lampp/var/mysql/ib_buffer_pool
+2021-02-07 17:43:00 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-02-07 17:43:00 0 [ERROR] Could not open mysql.plugin table. Some plugins may be not loaded
+2021-02-07 17:43:00 0 [Note] InnoDB: Buffer pool(s) load completed at 210207 17:43:00
+2021-02-07 17:43:00 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2021-02-07 17:43:00 0 [Note] Server socket created on IP: '::'.
+2021-02-07 17:43:00 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+2021-02-07 17:43:00 0 [ERROR] Aborting

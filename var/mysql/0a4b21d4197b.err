@@ -1,0 +1,58 @@
+2021-02-07 18:16:10 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-02-07 18:16:10 0 [Note] InnoDB: Uses event mutexes
+2021-02-07 18:16:10 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-07 18:16:10 0 [Note] InnoDB: Number of pools: 1
+2021-02-07 18:16:10 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2021-02-07 18:16:10 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2021-02-07 18:16:10 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-07 18:16:10 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-02-07 18:16:10 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=2218420
+2021-02-07 18:16:10 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2021-02-07 18:16:10 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-02-07 18:16:10 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-02-07 18:16:10 0 [Note] InnoDB: Setting file '/opt/lampp/var/mysql/ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-02-07 18:16:10 0 [Note] InnoDB: File '/opt/lampp/var/mysql/ibtmp1' size is now 12 MB.
+2021-02-07 18:16:10 0 [Note] InnoDB: 10.4.17 started; log sequence number 2218429; transaction id 2670
+2021-02-07 18:16:10 0 [Note] InnoDB: Loading buffer pool(s) from /opt/lampp/var/mysql/ib_buffer_pool
+2021-02-07 18:16:10 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-02-07 18:16:10 0 [Note] Server socket created on IP: '::'.
+2021-02-07 18:16:10 0 [ERROR] Incorrect definition of table mysql.event: expected column 'sql_mode' at position 14 to have type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','IGNORE_BAD_TABLE_OPTIONS','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_ALL_TABLES','NO_ZERO_IN_DATE','NO_ZERO_DATE','INVALID_DATES','ERROR_FOR_DIVISION_BY_ZERO','TRADITIONAL','NO_AUTO_CREATE_USER','HIGH_NOT_PRECEDENCE','NO_ENGINE_SUBSTITUTION','PAD_CHAR_TO_FULL_LENGTH','EMPTY_STRING_IS_NULL','SIMULTANEOUS_ASSIGNMENT'), found type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','IGNORE_BAD_TABLE_OPTIONS','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALU
+2021-02-07 18:16:10 0 [Note] InnoDB: Buffer pool(s) load completed at 210207 18:16:10
+2021-02-07 18:16:10 0 [ERROR] mysqld: Event Scheduler: An error occurred when initializing system tables. Disabling the Event Scheduler.
+2021-02-07 18:16:10 6 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2021-02-07 18:16:10 6 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2021-02-07 18:16:10 0 [Note] Reading of all Master_info entries succeeded
+2021-02-07 18:16:10 0 [Note] Added new Master_info '' to hash table
+2021-02-07 18:16:10 0 [Note] /opt/lampp/sbin/mysqld: ready for connections.
+Version: '10.4.17-MariaDB'  socket: '/opt/lampp/var/mysql/mysql.sock'  port: 3306  Source distribution
+2021-02-07 18:16:10 8 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2021-02-07 18:16:16 9 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2021-02-07 18:16:16 9 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2021-02-07 18:16:16 9 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:16 9 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 11 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 11 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2021-02-07 18:16:22 12 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2021-02-07 18:16:22 12 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-07 18:16:22 12 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).

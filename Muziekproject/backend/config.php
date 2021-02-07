@@ -1,7 +1,7 @@
 <?php
-	$db_Host = 'mysqlDB';
+	$db_Host = '127.0.0.1';
 	$db_Name = 'muziek_project';
-	$db_Username = 'user';
+	$db_Username = 'root';
 	$db_Password = 'bakfiets';
 	$db_connection= mysqli_connect($db_Host, $db_Username, $db_Password, $db_Name);
 
