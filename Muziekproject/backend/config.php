@@ -1,5 +1,5 @@
 <?php
-	$db_Host = 'localhost';
+	$db_Host = 'mysqlDB';
 	$db_Name = 'muziek_project';
 	$db_Username = 'user';
 	$db_Password = 'bakfiets';

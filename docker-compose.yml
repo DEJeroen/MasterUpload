@@ -12,11 +12,12 @@ services:
             - default
     db:
         image: mysql:8.0
+        container_name: mysqlDB
         ports: 
             - "3306:3306"
         command: --default-authentication-plugin=mysql_native_password
         environment:
-            MYSQL_DATABASE: muziek-project
+            MYSQL_DATABASE: muziek_project
             MYSQL_USER: user
             MYSQL_PASSWORD: bakfiets
             MYSQL_ROOT_PASSWORD: bakfiets 
@@ -34,7 +35,7 @@ services:
             - 8000:80
         environment:
             MYSQL_USER: user
-            MYSQL_PASSWORD: test
-            MYSQL_ROOT_PASSWORD: test 
+            MYSQL_PASSWORD: bakfiets
+            MYSQL_ROOT_PASSWORD: bakfiets 
 volumes:
     persistent:
