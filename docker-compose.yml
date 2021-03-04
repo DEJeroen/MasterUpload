@@ -5,7 +5,7 @@ services:
         ports: 
             - "80:80"
         volumes:
-            - ./Muziekproject:/opt/lampp/htdocs
-            - ./conf/config.inc.php:/opt/lampp/phpmyadmin/config.inc.php
+            - ./Muziekproject:/var/www/html
+            - ./conf/config.inc.php:/etc/phpmyadmin/config.inc.php
             - ./conf/httpd-xampp.conf:/opt/lampp/etc/extra/httpd-xampp.conf
             - ./var/mysql:/opt/lampp/var/mysql

@@ -33,7 +33,7 @@ $cfg['Servers'][$i]['password'] = 'bakfiets';
 /* Server parameters */
 //$cfg['Servers'][$i]['host'] = 'localhost';
 $cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
+$cfg['Servers'][$i]['AllowNoPassword'] = true;
 
 /**
  * phpMyAdmin configuration storage settings.
